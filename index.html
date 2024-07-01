@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Everyday Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Everyday Todo List</h1>
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search lists">
+            <button id="search-btn">Search</button>
+        </div>
+        <div class="main-content">
+            <div id="list-container">
+                <div id="list-header">
+                    <input type="text" id="list-name" placeholder="List Name">
+                    <button id="new-list">New List</button>
+                </div>
+                <div id="add-todo">
+                    <input type="text" id="todo-title" placeholder="Add a new todo">
+                    <input type="date" id="todo-date">
+                    <select id="todo-priority">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                    <button id="add-btn">Add</button>
+                </div>
+                <ul id="todo-list"></ul>
+            </div>
+            <div id="lists-pane">
+                <h2>Your Lists</h2>
+                <ul id="lists-container"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

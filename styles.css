@@ -1,0 +1,243 @@
+/* Styles for the main content area */
+.main-content {
+    display: flex; /* Display children in a row */
+    gap: 20px; /* Spacing between children */
+}
+
+/* Styles for the list container */
+#list-container {
+    flex: 2; /* Take 2/3 of available space in the main content */
+}
+
+/* Styles for the lists pane */
+#lists-pane {
+    flex: 1; /* Take 1/3 of available space in the main content */
+    background-color: #D8EFD3; /* Light green background */
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px; /* Padding inside */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Styles for the h2 heading inside lists pane */
+#lists-pane h2 {
+    color: #55AD9B; /* Teal color for heading text */
+    margin-top: 0; /* Remove top margin */
+}
+
+/* Styles for the lists container */
+#lists-container {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+/* Styles for list items inside lists container */
+#lists-container li {
+    padding: 10px; /* Padding around each item */
+    background-color: #F1F8E8; /* Light green background */
+    margin-bottom: 5px; /* Spacing between items */
+    border-radius: 3px; /* Rounded corners */
+    cursor: pointer; /* Cursor pointer on hover */
+}
+
+/* Hover effect on list items */
+#lists-container li:hover {
+    background-color: #95D2B3; /* Darker green background on hover */
+}
+
+/* Active state for list items */
+#lists-container li.active {
+    background-color: #55AD9B; /* Teal background for active item */
+    color: white; /* White text color for active item */
+}
+
+/* General styles for the body */
+body {
+    font-family: Arial, sans-serif; /* Font and fallback font */
+    background-color: #F1F8E8; /* Light green background */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Container styles */
+.container {
+    max-width: 800px; /* Maximum width of content */
+    margin: 0 auto; /* Center align container */
+    padding: 20px; /* Padding inside container */
+}
+
+/* Styles for h1 heading */
+h1 {
+    text-align: center; /* Center align heading */
+    color: #55AD9B; /* Teal color for heading */
+}
+
+/* Styles for the list container */
+#list-container {
+    background-color: #D8EFD3; /* Light green background */
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px; /* Padding inside */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Styles for the list header section */
+#list-header {
+    display: flex; /* Display children in a row */
+    justify-content: space-between; /* Space between children */
+    margin-bottom: 20px; /* Spacing at the bottom */
+}
+
+/* Styles for the list name input */
+#list-name {
+    flex-grow: 1; /* Grow to take available space */
+    padding: 5px; /* Padding inside */
+    border: 1px solid #95D2B3; /* Border with light green color */
+    border-radius: 3px; /* Rounded corners */
+    margin-right: 10px; /* Spacing on the right */
+}
+
+/* Styles for the new list button */
+#new-list {
+    padding: 5px 10px; /* Padding inside */
+    background-color: #55AD9B; /* Teal background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 3px; /* Rounded corners */
+    cursor: pointer; /* Cursor pointer */
+}
+
+/* Styles for the add todo section */
+#add-todo {
+    display: flex; /* Display children in a row */
+    margin-bottom: 20px; /* Spacing at the bottom */
+}
+
+/* Styles for the todo input fields */
+#todo-title, #todo-date, #todo-priority {
+    padding: 5px; /* Padding inside */
+    border: 1px solid #95D2B3; /* Border with light green color */
+    border-radius: 3px; /* Rounded corners */
+    margin-right: 5px; /* Spacing on the right */
+}
+
+/* Styles for the todo title input */
+#todo-title {
+    flex-grow: 1; /* Grow to take available space */
+}
+
+/* Styles for the add button */
+#add-btn {
+    padding: 5px 10px; /* Padding inside */
+    background-color: #95D2B3; /* Light green background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 3px; /* Rounded corners */
+    cursor: pointer; /* Cursor pointer */
+}
+
+/* Styles for the search container */
+#search-container {
+    margin-bottom: 20px; /* Spacing at the bottom */
+    display: flex; /* Display children in a row */
+    justify-content: center; /* Center align children */
+}
+
+/* Styles for the search input */
+#search-input {
+    padding: 5px; /* Padding inside */
+    border: 1px solid #95D2B3; /* Border with light green color */
+    border-radius: 3px; /* Rounded corners */
+    margin-right: 5px; /* Spacing on the right */
+    width: 200px; /* Fixed width */
+}
+
+/* Styles for the search button */
+#search-btn {
+    padding: 5px 10px; /* Padding inside */
+    background-color: #55AD9B; /* Teal background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 3px; /* Rounded corners */
+    cursor: pointer; /* Cursor pointer */
+}
+
+/* Styles for the todo list */
+#todo-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+/* Styles for each todo item */
+.todo-item {
+    display: flex; /* Display children in a row */
+    align-items: center; /* Center align items vertically */
+    padding: 10px; /* Padding around each item */
+    border-bottom: 1px solid #95D2B3; /* Border bottom with light green color */
+    margin-bottom: 5px; /* Spacing between items */
+}
+
+/* Styles for the last todo item */
+.todo-item:last-child {
+    border-bottom: none; /* Remove border bottom for the last item */
+}
+
+/* Styles for completed todo items */
+.todo-item.completed {
+    text-decoration: line-through; /* Strikethrough text */
+    opacity: 0.6; /* Reduced opacity for completed items */
+}
+
+/* Styles for the todo item title */
+.todo-item .title {
+    flex-grow: 1; /* Grow to take available space */
+}
+
+/* Styles for the todo item date */
+.todo-item .date {
+    margin-right: 10px; /* Spacing on the right */
+}
+
+/* Styles for the complete and delete buttons */
+.todo-item .complete-btn,
+.todo-item .delete-btn {
+    padding: 3px 8px; /* Padding inside */
+    margin-left: 5px; /* Spacing on the left */
+    border: none; /* No border */
+    border-radius: 3px; /* Rounded corners */
+    cursor: pointer; /* Cursor pointer */
+}
+
+/* Styles for the complete button */
+.todo-item .complete-btn {
+    background-color: #55AD9B; /* Teal background */
+    color: white; /* White text color */
+}
+
+/* Styles for the delete button */
+.todo-item .delete-btn {
+    background-color: #f44336; /* Red background */
+    color: white; /* White text color */
+}
+
+/* Priority styles for todo items */
+.todo-item.priority-high {
+    background-color: #F1F8E8; /* Light green background */
+}
+
+.todo-item.priority-medium {
+    background-color: #D8EFD3; /* Light green background */
+}
+
+.todo-item.priority-low {
+    background-color: #95D2B3; /* Light green background */
+}
+
+/* Animation styles for newly added todo items */
+.todo-item.added {
+    animation: fadeIn 0.5s; /* Fade-in animation */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; } /* Start with opacity 0 */
+    to { opacity: 1; } /* End with opacity 1 */
+}
